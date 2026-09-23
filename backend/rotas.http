@@ -9,12 +9,12 @@ Content-Type: application/json
 {
     "title": "Estudar Fastify",
     "dueDate": "2026-09-20"
-};
+}
 
 ###
 
 # Marcar como concluida (troque 1 pelo id retornado na criação)
-PATCH http://localhost:3333/api/tasks/1
+PATCH http://localhost:3333/api/tasks/2
 Content-Type: application/json
 
 {
@@ -24,4 +24,4 @@ Content-Type: application/json
 ###
 
 #Excluir
-DELETE http://localhost:3333/api/tasks/11
+DELETE http://localhost:3333/api/tasks/1
