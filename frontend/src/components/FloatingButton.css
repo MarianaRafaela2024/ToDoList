@@ -1,0 +1,35 @@
+.floating-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  cursor: pointer;
+  background: var(--accent-gradient);
+  box-shadow:
+    0 10px 24px rgba(59, 130, 246, 0.35),
+    0 0 0 6px rgba(139, 92, 246, 0.12);
+  transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
+}
+
+.floating-button:hover {
+  transform: scale(1.06);
+  filter: brightness(1.08);
+}
+
+.floating-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .floating-button {
+    right: 16px;
+    bottom: 16px;
+  }
+}
